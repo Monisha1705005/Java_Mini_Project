@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* CARD STYLE */
+.card {
+    width: 250px;
+    background: white;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* BUTTON LINKS */
+.card a {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+/* DIFFERENT COLORS */
+.add {
+    background: #4CAF50;
+}
+
+.view {
+    background: #2196F3;
+}
+
+.logout {
+    background: #f44336;
+}
+
+.card a:hover {
+    opacity: 0.9;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    Task Dashboard
+</div>
+
+<div class="container">
+
+    <!-- ADD TASK -->
+    <div class="card">
+        <h3>Add New Task</h3>
+        <p>Create and manage your tasks easily.</p>
+        <a href="addTask.html" class="add">Add Task</a>
+    </div>
+
+    <!-- VIEW TASK -->
+    <div class="card">
+        <h3>View Tasks</h3>
+        <p>Check progress and risk levels.</p>
+        <a href="ViewTasksServlet" class="view">View Tasks</a>
+    </div>
+
+    <!-- LOGOUT -->
+    <div class="card">
+        <h3>Logout</h3>
+        <p>End your session securely.</p>
+        <a href="login.html" class="logout">Logout</a>
+    </div>
+
+</div>
+
+</body>
+</html>

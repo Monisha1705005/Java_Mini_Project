@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Task</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORM CARD */
+.box {
+    width: 380px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 11px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input:focus {
+    border-color: #ff7043;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e64a19;
+}
+
+/* BACK LINK */
+.back {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #333;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Add Task</h2>
+
+<form action="AddTaskServlet" method="post">
+
+    <input type="text" name="name" placeholder="Task Name" required>
+
+    <input type="number" name="totalDays" placeholder="Total Days" required>
+
+    <input type="number" name="daysPassed" placeholder="Days Passed" required>
+
+    <button type="submit">Add Task</button>
+
+</form>
+
+<a href="dashboard.html" class="back">Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>
